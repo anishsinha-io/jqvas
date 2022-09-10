@@ -9,6 +9,23 @@ import Fourth from "./Slides/Fourth";
 import Fifth from "./Slides/Fifth";
 import Sixth from "./Slides/Sixth";
 import Seventh from "./Slides/Seventh";
+import Eighth from "./Slides/Eighth";
+import Ninth from "./Slides/Ninth";
+import Tenth from "./Slides/Tenth";
+import Eleventh from "./Slides/Eleventh";
+import Twelfth from "./Slides/Twelfth";
+import Thirteenth from "./Slides/Thirteenth";
+import Fourteenth from "./Slides/Fourteenth";
+import Fifteenth from "./Slides/Fifteenth";
+import Sixteenth from "./Slides/Sixteenth";
+import Seventeenth from "./Slides/Seventeenth";
+import Eighteenth from "./Slides/Eighteenth";
+import Nineteenth from "./Slides/Nineteenth";
+import Twentieth from "./Slides/Twentieth";
+import TwentyFirst from "./Slides/TwentyFirst";
+import TwentySecond from "./Slides/TwentySecond";
+import TwentyThird from "./Slides/TwentyThird";
+import TwentyFourth from "./Slides/TwentyFourth";
 
 const Game = () => {
   // state
@@ -24,9 +41,25 @@ const Game = () => {
     <Fifth name={name} />,
     <Sixth name={name} />,
     <Seventh name={name} />,
+    <Eighth name={name} />,
+    <Ninth name={name} />,
+    <Tenth name={name} />,
+    <Eleventh name={name} />,
+    <Twelfth name={name} />,
+    <Thirteenth name={name} />,
+    <Fourteenth name={name} />,
+    <Fifteenth name={name} />,
+    <Sixteenth name={name} />,
+    <Seventeenth name={name} />,
+    <Eighteenth name={name} />,
+    <Nineteenth name={name} />,
+    <Twentieth name={name} />,
+    <TwentyFirst name={name} />,
+    <TwentySecond name={name} />,
+    <TwentyThird name={name} />,
+    <TwentyFourth name={name} />,
   ];
 
-  console.log(slide);
   // handlers
   const handleChange = (e: any) => {
     setName(() => e.target.value);
