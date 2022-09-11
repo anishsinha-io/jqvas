@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/jqvas/static/css/main.fccb1379.css",
-    "main.js": "/jqvas/static/js/main.51935eb9.js",
-    "static/js/787.c8055576.chunk.js": "/jqvas/static/js/787.c8055576.chunk.js",
-    "static/media/snowfall.gif": "/jqvas/static/media/snowfall.610f07bfda11a4d95fb4.gif",
-    "static/media/shooting-star-over-city.gif": "/jqvas/static/media/shooting-star-over-city.46fa30895dea7eb1e5ec.gif",
-    "index.html": "/jqvas/index.html",
-    "main.fccb1379.css.map": "/jqvas/static/css/main.fccb1379.css.map",
-    "main.51935eb9.js.map": "/jqvas/static/js/main.51935eb9.js.map",
-    "787.c8055576.chunk.js.map": "/jqvas/static/js/787.c8055576.chunk.js.map"
+    "main.css": "/static/css/main.00285088.css",
+    "main.js": "/static/js/main.c66f9515.js",
+    "static/js/787.c8055576.chunk.js": "/static/js/787.c8055576.chunk.js",
+    "static/media/snowfall.gif": "/static/media/snowfall.610f07bfda11a4d95fb4.gif",
+    "static/media/shooting-star-over-city.gif": "/static/media/shooting-star-over-city.46fa30895dea7eb1e5ec.gif",
+    "index.html": "/index.html",
+    "main.00285088.css.map": "/static/css/main.00285088.css.map",
+    "main.c66f9515.js.map": "/static/js/main.c66f9515.js.map",
+    "787.c8055576.chunk.js.map": "/static/js/787.c8055576.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fccb1379.css",
-    "static/js/main.51935eb9.js"
+    "static/css/main.00285088.css",
+    "static/js/main.c66f9515.js"
   ]
 }
