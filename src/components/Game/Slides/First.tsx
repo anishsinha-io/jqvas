@@ -6,7 +6,7 @@ const First: React.FC<{ name: string }> = ({ name }) => {
 
   return (
     <p className="game-text game-text__first">
-      Someone asked me what I wished for and I
+      Someone asked me what I wished for and I{" "}
       <button
         className="link-minimal"
         onClick={() => setSlide(() => slide + 1)}

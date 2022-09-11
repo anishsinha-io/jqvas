@@ -3,7 +3,9 @@
   box-sizing: border-box;
   font-family: "Times New Roman", sans-serif;
   margin: 0;
-  background-color: var(--light-gray);
+  background: url("./assets/snowfall.gif");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
 /* set variables */
@@ -11,7 +13,7 @@
   --light-gray: #e5e5e5;
   --light-goldenrod: #ffec8b;
   --dark-gray: #525662;
-  --azores-blue: #0085a7;
+  --blue-coral: #1c5366;
   --dusky-purple: #99649a;
 }
 
@@ -43,6 +45,7 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  border-radius: 1rem;
 }
 
 /* format the game's text. place it correctly on the screen and set its font size + color */
@@ -50,9 +53,10 @@
   font-size: 1.5rem;
   position: absolute;
   color: var(--light-gray);
-  background-color: transparent;
+  background: none;
   transition: all 0.5s ease-in;
   animation: fade-in 1s;
+  line-height: 2.25rem;
 }
 
 /* first slide specific styles */
@@ -79,7 +83,6 @@
 
 .game-text__fourth,
 .game-text__fifth,
-.game-text__sixth,
 .game-text__twelfth {
   top: 10%;
   left: 20%;
@@ -88,10 +91,22 @@
   overflow: auto;
 }
 
-.game-text__seventh,
+.game-text__sixth {
+  top: 10%;
+  width: 85%;
+  height: 80%;
+  overflow: auto;
+}
+
 .game-text__eighth {
   width: 50%;
   top: 15%;
+}
+
+.game-text__seventh {
+  top: 15%;
+  left: 15%;
+  width: 75%;
 }
 
 .game-text__ninth,
@@ -121,20 +136,23 @@
 
 .link-minimal,
 .link-minimal-loop {
+  padding-left: 0;
+  padding-right: 0;
   border: none;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background: none;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--light-goldenrod);
   cursor: pointer;
+  transition: all 0.25s ease-in;
 }
 
 .link-minimal-loop {
-  color: var(--azores-blue);
+  color: var(--blue-coral);
 }
 
 .link-minimal:hover {
-  transition: all 0.25s ease-in;
   color: var(--light-gray);
 }
 
@@ -152,7 +170,8 @@
 
 .game-init__heading {
   grid-column: 1/3;
-  color: var(--dark-gray);
+  color: var(--light-gray);
+  box-shadow: 0;
 }
 
 /* style for initial input where user inputs their name */
@@ -163,7 +182,8 @@
   border-radius: 1.5rem;
   font-size: 1.25rem;
   padding-left: 0.75rem;
-  border: 2px solid var(--dark-gray);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
 }
 
 .game-init__ok {
@@ -171,7 +191,13 @@
   height: 3rem;
   width: 3rem;
   border-radius: 1.5rem;
-  color: var(--dark-gray);
-  border: 2px solid var(--dark-gray);
+  border: 2px solid var(--light-gray);
+  color: var(--light-gray);
   cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.game-init__ok:hover {
+  color: var(--dark-gray);
+  background: var(--light-gray);
 }

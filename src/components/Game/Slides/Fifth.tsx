@@ -21,10 +21,13 @@ const Fifth: React.FC<{ name: string }> = ({ name }) => {
       to greet them; even if it's in passing, I'd love to hear from them.
       <br />
       <br />
-      So yeah, I always wish for {name}'s
-      {/* we have to add the following line because otherwise there will be an annoying extra space before 'space' */}
-      {/* prettier-ignore */}
-      <button className="link-minimal"  onClick={() => setSlide(() => slide + 1)}>space</button>
+      So yeah, I always wish for {name}'s{" "}
+      <button
+        className="link-minimal"
+        onClick={() => setSlide(() => slide + 1)}
+      >
+        space
+      </button>
       <br />
       because {name} deserves it.
     </p>

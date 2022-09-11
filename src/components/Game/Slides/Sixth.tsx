@@ -20,9 +20,8 @@ const Sixth: React.FC<{ name: string }> = ({ name }) => {
         className="link-minimal"
         onClick={() => setSlide(() => slide + 1)}
       >
-        What makes someone deserving of something
+        What makes someone deserving of something?
       </button>
-      ?
     </p>
   );
 };

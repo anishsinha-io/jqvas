@@ -12,9 +12,8 @@ const Eighth: React.FC<{ name: string }> = () => {
         className="link-minimal"
         onClick={() => setSlide(() => slide + 1)}
       >
-        So
+        So?
       </button>
-      ?
     </p>
   );
 };

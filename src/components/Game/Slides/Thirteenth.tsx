@@ -5,7 +5,7 @@ const Thirteenth: React.FC<{ name: string }> = () => {
   const { slide, setSlide } = useContext(GameCtx);
   return (
     <p className="game-text game-text__thirteenth">
-      Let yourself be important. You deserve
+      Let yourself be important. You deserve{" "}
       <button
         className="link-minimal"
         onClick={() => setSlide(() => slide + 1)}
