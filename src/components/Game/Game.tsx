@@ -25,7 +25,6 @@ import Twentieth from "./Slides/Twentieth";
 import TwentyFirst from "./Slides/TwentyFirst";
 import TwentySecond from "./Slides/TwentySecond";
 import TwentyThird from "./Slides/TwentyThird";
-import TwentyFourth from "./Slides/TwentyFourth";
 
 const Game = () => {
   // state
@@ -57,7 +56,6 @@ const Game = () => {
     <TwentyFirst name={name} />,
     <TwentySecond name={name} />,
     <TwentyThird name={name} />,
-    <TwentyFourth name={name} />,
   ];
 
   // handlers
@@ -85,7 +83,7 @@ const Game = () => {
           </div>
         )}
         {ready && (
-          <div className="game-slide game-slide__first">
+          <div className="game-slide">
             <img
               src={ShootingStarOverCity}
               alt="shooting star over city"

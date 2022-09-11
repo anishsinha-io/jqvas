@@ -11,6 +11,17 @@
   --light-gray: #e5e5e5;
   --light-goldenrod: #ffec8b;
   --dark-gray: #525662;
+  --azores-blue: #0085a7;
+  --dusky-purple: #99649a;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* center everything nicely. */
@@ -40,6 +51,8 @@
   position: absolute;
   color: var(--light-gray);
   background-color: transparent;
+  transition: all 0.5s ease-in;
+  animation: fade-in 1s;
 }
 
 /* first slide specific styles */
@@ -64,29 +77,69 @@
   overflow: auto;
 }
 
-.game-text__fourth {
+.game-text__fourth,
+.game-text__fifth,
+.game-text__sixth,
+.game-text__twelfth {
   top: 10%;
   left: 20%;
-  height: 80%;
   width: 65%;
+  height: 80%;
   overflow: auto;
 }
 
-.game-text__fifth {
-  top: 10%;
-  left: 20%;
-  height: 80%;
-  width: 65%;
-  overflow: auto;
+.game-text__seventh,
+.game-text__eighth {
+  width: 50%;
+  top: 15%;
 }
 
-.link-minimal {
+.game-text__ninth,
+.game-text__tenth,
+.game-text__thirteenth {
+  width: 40%;
+  top: 15%;
+  left: 20%;
+}
+
+.game-text__eleventh,
+.game-text__fourteenth,
+.game-text__fifteenth,
+.game-text__sixteenth,
+.game-text__seventeenth,
+.game-text__eighteenth,
+.game-text__nineteenth,
+.game-text__twentieth,
+.game-text__twentyfirst,
+.game-text__twentysecond,
+.game-text__twentythird,
+.game-text__twentyfourth {
+  top: 15%;
+  left: 20%;
+  width: 60%;
+}
+
+.link-minimal,
+.link-minimal-loop {
   border: none;
   background-color: transparent;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--light-goldenrod);
   cursor: pointer;
+}
+
+.link-minimal-loop {
+  color: var(--azores-blue);
+}
+
+.link-minimal:hover {
+  transition: all 0.25s ease-in;
+  color: var(--light-gray);
+}
+
+.link-minimal-loop:hover {
+  color: var(--dusky-purple);
 }
 
 .game-init {
@@ -120,4 +173,5 @@
   border-radius: 1.5rem;
   color: var(--dark-gray);
   border: 2px solid var(--dark-gray);
+  cursor: pointer;
 }

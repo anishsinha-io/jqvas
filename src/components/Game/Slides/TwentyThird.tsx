@@ -1,21 +1,19 @@
 import React, { useContext } from "react";
 import GameCtx from "../gamectx";
 
-const TwentyThird: React.FC<{ name: string }> = () => {
-  const { slide, setSlide } = useContext(GameCtx);
+const TwentyFourth: React.FC<{ name: string }> = () => {
+  const { setSlide } = useContext(GameCtx);
   return (
-    <p className="game-text game-text__twentythird">
-      <button
-        className="link-minimal"
-        onClick={() => setSlide(() => slide + 1)}
-      >
-        Peace of mind
+    <p className="game-text game-text__twentyfourth">
+      {/* at this point we loop infinitely starting from 19 */}
+      <button className="link-minimal-loop" onClick={() => setSlide(() => 19)}>
+        Your happiness
       </button>
       .
       <br />
-      And on.
+      And again.
     </p>
   );
 };
 
-export default TwentyThird;
+export default TwentyFourth;

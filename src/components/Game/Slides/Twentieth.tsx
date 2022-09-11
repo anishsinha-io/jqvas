@@ -7,7 +7,7 @@ const Twentieth: React.FC<{ name: string }> = () => {
   return (
     <p className="game-text game-text__twentieth">
       <button
-        className="link-minimal"
+        className="link-minimal-loop"
         onClick={() => setSlide(() => slide + 1)}
       >
         Good health

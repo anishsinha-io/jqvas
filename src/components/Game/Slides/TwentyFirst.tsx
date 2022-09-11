@@ -6,7 +6,7 @@ const TwentyFirst: React.FC<{ name: string }> = () => {
   return (
     <p className="game-text game-text__twentyfirst">
       <button
-        className="link-minimal"
+        className="link-minimal-loop"
         onClick={() => setSlide(() => slide + 1)}
       >
         Space
